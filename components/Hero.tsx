@@ -71,7 +71,7 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white shadow-lg">
                     <img 
-                      src="https://content.instruct-ai.com/api/v1/content/media/9d63c5d6-d064-419b-90f7-04663da6f494.png" 
+                      src="https://uhisosa.ee/wp-content/uploads/2023/05/uhisosa.svg" 
                       alt="U" 
                       className="w-8 h-8 invert brightness-0"
                     />

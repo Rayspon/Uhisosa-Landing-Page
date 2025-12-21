@@ -10,7 +10,7 @@ const Footer: React.FC<{ t: TranslationSet }> = ({ t }) => {
           <div className="mb-12 md:mb-0">
              <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="https://content.instruct-ai.com/api/v1/content/media/9d63c5d6-d064-419b-90f7-04663da6f494.png" 
+                  src="https://uhisosa.ee/wp-content/uploads/2023/05/uhisosa.svg" 
                   alt="Ühiosa" 
                   className="h-10 w-10 grayscale brightness-0"
                 />

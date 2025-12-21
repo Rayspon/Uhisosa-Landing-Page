@@ -46,7 +46,7 @@ const About: React.FC<{ t: TranslationSet }> = ({ t }) => {
             </div>
             <div className="space-y-4">
               <div className="bg-white p-10 rounded-[3rem] shadow-sm border border-gray-100 flex flex-col justify-end min-h-[240px]">
-                <img src="https://content.instruct-ai.com/api/v1/content/media/9d63c5d6-d064-419b-90f7-04663da6f494.png" className="w-16 mb-6 opacity-20" alt="Logo" />
+                <img src="https://uhisosa.ee/wp-content/uploads/2023/05/uhisosa.svg" className="w-16 mb-6 opacity-20" alt="Logo" />
                 <p className="text-gray-900 font-black text-2xl tracking-tight">ÜHISOSA —<br/>Точка пересечения</p>
               </div>
               <div className="rounded-[3rem] overflow-hidden aspect-[4/5] shadow-xl">

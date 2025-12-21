@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLanguage, t }) => {
       <div className="max-w-screen-xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-3 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
           <img 
-            src="https://content.instruct-ai.com/api/v1/content/media/9d63c5d6-d064-419b-90f7-04663da6f494.png" 
+            src="https://uhisosa.ee/wp-content/uploads/2023/05/uhisosa.svg" 
             alt="Ühiosa Logo" 
             className={`h-10 w-10 transition-all duration-300 ${isScrolled ? 'scale-90' : 'scale-110'}`}
           />
