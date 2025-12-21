@@ -35,9 +35,36 @@ const Footer: React.FC<{ t: TranslationSet }> = ({ t }) => {
             <div>
               <h4 className="text-[10px] md:text-xs font-black text-gray-900 uppercase tracking-[0.2em] mb-4 md:mb-6">{t.footer.social}</h4>
               <ul className="space-y-3 md:space-y-4">
-                <li><a href="#" className="text-xs md:text-sm font-bold text-gray-400 hover:text-primary transition-colors">Facebook</a></li>
-                <li><a href="#" className="text-xs md:text-sm font-bold text-gray-400 hover:text-primary transition-colors">Instagram</a></li>
-                <li><a href="#" className="text-xs md:text-sm font-bold text-gray-400 hover:text-primary transition-colors">YouTube</a></li>
+                <li>
+                  <a 
+                    href="https://www.facebook.com/uhisosa/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-xs md:text-sm font-bold text-gray-400 hover:text-primary transition-colors"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.instagram.com/uhisosa/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-xs md:text-sm font-bold text-gray-400 hover:text-primary transition-colors"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.youtube.com/@uhisosa" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-xs md:text-sm font-bold text-gray-400 hover:text-primary transition-colors"
+                  >
+                    YouTube
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
