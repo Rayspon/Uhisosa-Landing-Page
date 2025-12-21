@@ -23,7 +23,7 @@ const Footer: React.FC<{ t: TranslationSet }> = ({ t }) => {
           
           <div className="grid grid-cols-2 gap-16">
             <div>
-              <h4 className="text-xs font-black text-gray-900 uppercase tracking-[0.2em] mb-6">Linkid</h4>
+              <h4 className="text-xs font-black text-gray-900 uppercase tracking-[0.2em] mb-6">{t.footer.links}</h4>
               <ul className="space-y-4">
                 {Object.entries(t.nav).map(([key, label]) => (
                   <li key={key}>
@@ -33,7 +33,7 @@ const Footer: React.FC<{ t: TranslationSet }> = ({ t }) => {
               </ul>
             </div>
             <div>
-              <h4 className="text-xs font-black text-gray-900 uppercase tracking-[0.2em] mb-6">Sotsiaalmeedia</h4>
+              <h4 className="text-xs font-black text-gray-900 uppercase tracking-[0.2em] mb-6">{t.footer.social}</h4>
               <ul className="space-y-4">
                 <li><a href="#" className="text-sm font-bold text-gray-400 hover:text-primary transition-colors">Facebook</a></li>
                 <li><a href="#" className="text-sm font-bold text-gray-400 hover:text-primary transition-colors">Instagram</a></li>
@@ -50,7 +50,7 @@ const Footer: React.FC<{ t: TranslationSet }> = ({ t }) => {
           <div className="flex items-center space-x-3 text-[10px] font-black text-gray-300 uppercase tracking-[0.3em]">
             <span>{t.footer.partOf}</span>
             <span className="w-1 h-1 bg-gray-200 rounded-full"></span>
-            <span>Tallinn, Estonia</span>
+            <span>{t.footer.location}</span>
           </div>
         </div>
       </div>

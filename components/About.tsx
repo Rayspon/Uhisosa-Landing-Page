@@ -8,9 +8,9 @@ const About: React.FC<{ t: TranslationSet }> = ({ t }) => {
       <div className="max-w-screen-xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-5">
-            <span className="text-primary font-black uppercase tracking-[0.3em] text-xs mb-6 block">01 / {t.nav.about}</span>
+            <span className="text-primary font-black uppercase tracking-[0.3em] text-xs mb-6 block">{t.about.badge}</span>
             <h2 className="text-5xl md:text-7xl font-black text-gray-900 leading-[1.1] mb-10 tracking-tighter">
-              Kogukond, mis <span className="text-primary">ühendab</span>.
+              {t.about.title}
             </h2>
             <p className="text-xl text-gray-500 font-medium leading-relaxed mb-12">
               {t.about.description}
@@ -40,8 +40,8 @@ const About: React.FC<{ t: TranslationSet }> = ({ t }) => {
                 <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Connect" />
               </div>
               <div className="bg-primary p-10 rounded-[3rem] text-white">
-                <p className="text-4xl font-black mb-2">Liidu osa</p>
-                <p className="text-white/60 text-sm font-bold uppercase tracking-widest">EKB Koguduste Liit</p>
+                <p className="text-4xl font-black mb-2">{t.about.unionPart}</p>
+                <p className="text-white/60 text-sm font-bold uppercase tracking-widest">{t.about.unionName}</p>
               </div>
             </div>
             <div className="space-y-4">

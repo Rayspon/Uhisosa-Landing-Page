@@ -12,12 +12,12 @@ const Services: React.FC<{ t: TranslationSet }> = ({ t }) => {
           
           <div className="relative z-10 grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <span className="text-primary font-black uppercase tracking-[0.3em] text-xs mb-6 block">02 / {t.nav.services}</span>
+              <span className="text-primary font-black uppercase tracking-[0.3em] text-xs mb-6 block">{t.services.badge}</span>
               <h2 className="text-5xl md:text-7xl font-black text-white leading-tight mb-8 tracking-tighter">
-                Sinu koht <br/><span className="text-primary italic">iga pühapäev.</span>
+                {t.services.title}
               </h2>
               <p className="text-xl text-gray-400 font-medium leading-relaxed mb-12 max-w-lg">
-                Meie uksed on avatud kõigile, kes otsivad osadust, rahu ja tähendusrikast kristlikku sõnumit.
+                {t.services.description}
               </p>
               
               <div className="space-y-8">
@@ -55,8 +55,8 @@ const Services: React.FC<{ t: TranslationSet }> = ({ t }) => {
                   className="w-full aspect-square object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent flex flex-col justify-end p-12">
-                   <p className="text-white text-3xl font-black mb-2">Oleme siin sinu jaoks.</p>
-                   <p className="text-white/50 font-bold uppercase tracking-widest text-sm italic">Tere tulemast ühisosasse</p>
+                   <p className="text-white text-3xl font-black mb-2">{t.services.hereForYou}</p>
+                   <p className="text-white/50 font-bold uppercase tracking-widest text-sm italic">{t.services.welcomeMsg}</p>
                 </div>
               </div>
             </div>
