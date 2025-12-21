@@ -9,13 +9,13 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ t, lang }) => {
   return (
-    <div className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
       {/* Background visual elements */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-primary-soft -z-10 skew-x-[-12deg] translate-x-1/4"></div>
-      <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] -z-10"></div>
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 -z-10 skew-x-[-12deg] translate-x-1/4"></div>
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] -z-10"></div>
       
       <div className="max-w-screen-xl mx-auto px-6 w-full grid lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-7 animate-reveal">
+        <div className="lg:col-span-7 reveal-up">
           <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -24,11 +24,11 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
             <span>{t.hero.sundayTime}</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-black text-gray-900 leading-[0.9] mb-8 tracking-tighter">
+          <h1 className="text-6xl md:text-8xl font-black text-gray-900 leading-[0.95] mb-8 tracking-tighter">
             {lang === 'et' ? (
-              <>ÜHIOSA.<br/><span className="text-primary italic">Sinu</span> kogukond.</>
+              <>ÜHIOSA.<br/><span className="text-primary">Sinu</span> kogukond.</>
             ) : (
-              <>ТОЧКА.<br/><span className="text-primary italic">Твоя</span> община.</>
+              <>ТОЧКА<br/><span className="text-primary uppercase">ПЕРЕСЕЧЕНИЯ</span></>
             )}
           </h1>
           
@@ -56,26 +56,29 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
           </div>
         </div>
         
-        <div className="lg:col-span-5 relative animate-reveal delay-2 hidden lg:block">
+        <div className="lg:col-span-5 relative hidden lg:block reveal-up" style={{ animationDelay: '0.2s' }}>
           <div className="relative group">
-            {/* Visual Frame */}
-            <div className="absolute -inset-4 border-2 border-primary/20 rounded-[4rem] group-hover:rotate-3 transition-transform duration-500"></div>
+            <div className="absolute -inset-4 border-2 border-primary/10 rounded-[4rem] group-hover:rotate-2 transition-transform duration-500"></div>
             <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl bg-gray-100 aspect-[4/5]">
                <img 
-                src="https://images.unsplash.com/photo-1544427928-c49cdfebf494?q=80&w=2000&auto=format&fit=crop" 
-                alt="Community and connection" 
+                src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2070&auto=format&fit=crop" 
+                alt="Community Connection" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
               
-              <div className="absolute bottom-10 left-10 right-10 p-8 glass-nav rounded-3xl border border-white/20">
+              <div className="absolute bottom-8 left-8 right-8 p-6 intersection-blur rounded-3xl border border-white/20">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white shadow-lg">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"/></svg>
+                    <img 
+                      src="https://content.instruct-ai.com/api/v1/content/media/9d63c5d6-d064-419b-90f7-04663da6f494.png" 
+                      alt="U" 
+                      className="w-8 h-8 invert brightness-0"
+                    />
                   </div>
                   <div>
-                    <p className="text-gray-900 font-black text-lg">Tallinn, Lasnamäe</p>
-                    <p className="text-gray-500 text-sm font-bold uppercase tracking-widest">Läänemere tee 30</p>
+                    <p className="text-gray-900 font-black text-lg leading-tight">Tallinn, Lasnamäe</p>
+                    <p className="text-gray-500 text-xs font-bold uppercase tracking-widest">Läänemere tee 30</p>
                   </div>
                 </div>
               </div>
@@ -83,14 +86,7 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
           </div>
         </div>
       </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
-      </div>
-    </div>
+    </section>
   );
 };
 

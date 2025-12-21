@@ -10,28 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #2521DB;
+        }
         body {
             font-family: 'Jost', sans-serif;
             scroll-behavior: smooth;
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
-        .bg-primary { background-color: #2521DB; }
-        .text-primary { color: #2521DB; }
-        .border-primary { border-color: #2521DB; }
-        .bg-primary-soft { background-color: rgba(37, 33, 219, 0.05); }
+        .bg-primary { background-color: var(--primary); }
+        .text-primary { color: var(--primary); }
+        .border-primary { border-color: var(--primary); }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+        /* Professional touches */
+        .intersection-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+        
+        .soft-shadow {
+            box-shadow: 0 30px 60px -12px rgba(37, 33, 219, 0.15);
+        }
+
+        /* Transitions */
+        .reveal-up {
+            opacity: 0;
+            animation: revealUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes revealUp {
+            from { opacity: 0; transform: translateY(40px); }
             to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-reveal {
-            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-        .delay-1 { animation-delay: 0.1s; }
-        .delay-2 { animation-delay: 0.2s; }
-        
-        .intersection-gradient {
-            background: linear-gradient(135deg, #2521DB 0%, #1a17a0 100%);
         }
 
         .glass-nav {
@@ -45,12 +54,15 @@
   "imports": {
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
 </head>
 <body class="bg-white text-gray-900 selection:bg-primary selection:text-white">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>

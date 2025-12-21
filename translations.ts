@@ -51,7 +51,7 @@ export const translations: Record<'et' | 'ru', TranslationSet> = {
       contact: 'Контакт',
     },
     hero: {
-      title: 'Ühiosa - Твоя община в Ласнамяэ',
+      title: 'Ühiosa - Точка пересечения в Ласнамяэ',
       subtitle: 'Открытая площадка Союза ЕХБ Эстонии для общения и христианского послания.',
       cta: 'Приходи к нам',
       sundayTime: 'Каждое воскресенье в 17:30',
