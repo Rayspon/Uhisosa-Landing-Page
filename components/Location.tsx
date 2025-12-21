@@ -39,23 +39,17 @@ const Location: React.FC<{ t: TranslationSet }> = ({ t }) => {
         </div>
         
         <div className="lg:w-2/3 w-full h-[600px] rounded-[3.5rem] overflow-hidden relative shadow-2xl border-4 border-white">
-          {/* Enhanced Map Visual */}
-          <div className="absolute inset-0 bg-[#f8f9ff]">
-             <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#2521DB 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
-             
-             <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative scale-150">
-                   <div className="w-12 h-12 bg-primary rounded-full animate-ping opacity-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-                   <div className="w-8 h-8 bg-primary rounded-full border-4 border-white shadow-2xl relative z-10"></div>
-                   
-                   <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 bg-white px-5 py-3 rounded-2xl shadow-2xl border border-gray-100 whitespace-nowrap">
-                      <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1">{t.location.mapLabel}</p>
-                      <p className="text-sm font-black text-primary">ÜHIOSA / Läänemere 30</p>
-                      <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-8 border-transparent border-t-white"></div>
-                   </div>
-                </div>
-             </div>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.167825316413!2d24.867205177439366!3d59.45115200139268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692eb4998797f7b%3A0xc3f7a810b146473b!2sL%C3%A4%C3%A4nemere%20tee%2030%2C%2013913%20Tallinn!5e0!3m2!1set!2see!4v1710325123456!5m2!1set!2see"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="absolute inset-0 w-full h-full"
+            title={t.location.mapLabel}
+          ></iframe>
         </div>
       </div>
     </div>
