@@ -20,16 +20,16 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col font-['Jost'] font-normal">
+    <div className="min-h-screen flex flex-col font-['Jost'] font-normal overflow-x-hidden">
       <Navbar lang={lang} toggleLanguage={toggleLanguage} t={t} />
       <main className="flex-grow">
         <section id="home">
           <Hero lang={lang} t={t} />
         </section>
-        <section id="about" className="py-20 bg-gray-50">
+        <section id="about" className="bg-gray-50">
           <About t={t} />
         </section>
-        <section id="services" className="py-20">
+        <section id="services">
           <Services t={t} />
         </section>
         <section id="location" className="py-20 bg-gray-50">

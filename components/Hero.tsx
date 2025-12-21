@@ -9,14 +9,14 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ t, lang }) => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
+    <section className="relative min-h-screen flex items-center pt-24 md:pt-20 overflow-hidden bg-white">
       {/* Background visual elements */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 -z-10 skew-x-[-12deg] translate-x-1/4"></div>
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full bg-blue-50/30 md:bg-blue-50/50 -z-10 skew-x-[-12deg] translate-x-1/2 md:translate-x-1/4"></div>
+      <div className="absolute top-1/2 left-0 w-64 h-64 md:w-96 md:h-96 bg-primary/5 rounded-full blur-[80px] md:blur-[120px] -z-10"></div>
       
       <div className="max-w-screen-xl mx-auto px-6 w-full grid lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-7 reveal-up">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8">
+        <div className="lg:col-span-7 reveal-up text-center lg:text-left">
+          <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest mb-6 md:mb-8">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -24,7 +24,7 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
             <span>{t.hero.sundayTime}</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-black text-gray-900 leading-[0.95] mb-8 tracking-tighter">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-[1] md:leading-[0.95] mb-6 md:mb-8 tracking-tighter">
             {lang === 'et' ? (
               <>ÜHIOSA.<br/><span className="text-primary">Sinu</span> kogukond.</>
             ) : (
@@ -32,14 +32,14 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
             )}
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-500 font-medium leading-relaxed max-w-xl mb-12">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-500 font-medium leading-relaxed max-w-xl mb-10 md:mb-12 mx-auto lg:ml-0">
             {t.hero.subtitle}
           </p>
           
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 md:gap-6">
             <a 
               href="#location" 
-              className="px-10 py-5 bg-primary text-white font-black rounded-full hover:shadow-[0_20px_40px_rgba(37,33,219,0.3)] hover:-translate-y-1 transition-all duration-300 text-lg flex items-center space-x-3"
+              className="px-8 md:px-10 py-4 md:py-5 bg-primary text-white font-black rounded-full hover:shadow-[0_20px_40px_rgba(37,33,219,0.3)] hover:-translate-y-1 transition-all duration-300 text-base md:text-lg flex items-center justify-center space-x-3"
             >
               <span>{t.hero.cta}</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
             
             <a 
               href="#about" 
-              className="px-10 py-5 border-2 border-gray-100 text-gray-900 font-bold rounded-full hover:bg-gray-50 transition-all duration-300 text-lg"
+              className="px-8 md:px-10 py-4 md:py-5 border-2 border-gray-100 text-gray-900 font-bold rounded-full hover:bg-gray-50 transition-all duration-300 text-base md:text-lg text-center"
             >
               {t.nav.about}
             </a>
@@ -69,7 +69,7 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
               
               <div className="absolute bottom-8 left-8 right-8 p-6 intersection-blur rounded-3xl border border-white/20">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white shadow-lg">
+                  <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white shadow-lg shrink-0">
                     <img 
                       src="https://uhisosa.ee/wp-content/uploads/2023/05/uhisosa.svg" 
                       alt="U" 
