@@ -18,6 +18,13 @@ const Location: React.FC<{ t: TranslationSet }> = ({ t }) => {
                <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1 md:mb-2">{t.location.address}</p>
                <p className="text-base md:text-lg text-gray-500 font-medium">{t.location.district}</p>
             </div>
+
+            <div>
+               <h4 className="text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2 md:mb-3">{t.location.emailLabel}</h4>
+               <a href={`mailto:${t.location.email}`} className="text-xl md:text-2xl font-bold text-primary hover:underline transition-all">
+                 {t.location.email}
+               </a>
+            </div>
             
             <a 
               href="https://www.google.com/maps/search/Läänemere+tee+30+Tallinn" 

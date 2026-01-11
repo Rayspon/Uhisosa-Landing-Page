@@ -48,6 +48,8 @@ export interface TranslationSet {
     addressLabel: string;
     address: string;
     district: string;
+    emailLabel: string;
+    email: string;
     getDirections: string;
     mapLabel: string;
   };
