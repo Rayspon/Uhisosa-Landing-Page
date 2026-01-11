@@ -28,7 +28,7 @@ const About: React.FC<{ t: TranslationSet }> = ({ t }) => {
                 <div className="w-px h-10 md:h-12 bg-primary/20 group-hover:bg-primary transition-colors duration-500 mt-2 shrink-0"></div>
                 <div>
                   <h4 className="text-lg md:text-xl font-black text-gray-900 uppercase tracking-tight mb-1 md:mb-2">{t.about.collabTitle}</h4>
-                  <p className="text-sm md:text-base text-gray-400 font-medium leading-relaxed">{t.about.collabText}</p>
+                  <p className="text-sm md:text-base text-gray-400 font-medium leading-relaxed break-all sm:break-normal">{t.about.collabText}</p>
                 </div>
               </div>
             </div>

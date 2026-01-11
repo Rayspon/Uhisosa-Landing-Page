@@ -16,7 +16,7 @@ const Services: React.FC<{ t: TranslationSet }> = ({ t }) => {
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 md:mb-8 tracking-tighter">
                 {t.services.title}
               </h2>
-              <p className="text-lg md:text-xl text-gray-400 font-medium leading-relaxed mb-10 md:mb-12 max-w-lg mx-auto lg:ml-0">
+              <p className="text-lg md:text-xl text-gray-400 font-medium leading-relaxed mb-10 md:mb-12 max-w-lg mx-auto lg:ml-0 whitespace-pre-line">
                 {t.services.description}
               </p>
               
