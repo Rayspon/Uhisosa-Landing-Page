@@ -11,7 +11,7 @@ export const translations: Record<'et' | 'ru', TranslationSet> = {
       contact: 'Kontakt',
     },
     hero: {
-      title: 'Ühiosa - Sinu kogukond Lasnamäel',
+      title: 'ÜHISOSA - Sinu kogukond Lasnamäel',
       subtitle: 'Eesti EKB Liidu avatud platvorm suhtlemiseks ja kristliku sõnumi jagamiseks.',
       cta: 'Tule külla',
       sundayTime: 'Iga pühapäev kell 17:30',
@@ -19,7 +19,7 @@ export const translations: Record<'et' | 'ru', TranslationSet> = {
     about: {
       badge: '01 / Meist',
       title: 'Kogukond, mis ühendab.',
-      description: 'Ühiosa on Eesti EKB Liidu avatud platvorm. Meie eesmärk on soodustada suhtlust eesti ja slaavikeelsete kristlaste vahel ning tutvustada kristlikku sõnumit Eesti inimestele.',
+      description: 'ÜHISOSA on Eesti EKB Liidu avatud platvorm. Meie eesmärk on soodustada suhtlust eesti ja slaavikeelsete kristlaste vahel ning tutvustada kristlikku sõnumit Eesti inimestele.',
       activeMembers: 'Aktiivset liiget Lasnamäel',
       missionTitle: 'Meie eesmärk',
       missionText: 'Soodustada suhtlust eesti ja slaavikeelsete kristlaste vahel ning tutvustada kristlikku sõnumit Eesti inimestele.',

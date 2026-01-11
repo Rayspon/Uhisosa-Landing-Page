@@ -11,10 +11,10 @@ const Footer: React.FC<{ t: TranslationSet }> = ({ t }) => {
              <div className="flex items-center space-x-3 mb-4 md:mb-6">
                 <img 
                   src="https://uhisosa.ee/wp-content/uploads/2023/05/uhisosa.svg" 
-                  alt="Ühiosa" 
+                  alt="ÜHISOSA" 
                   className="h-8 w-8 md:h-10 md:w-10 grayscale brightness-0"
                 />
-                <span className="text-xl md:text-2xl font-black text-gray-900 tracking-tighter">ÜHIOSA</span>
+                <span className="text-xl md:text-2xl font-black text-gray-900 tracking-tighter">ÜHISOSA</span>
              </div>
              <p className="max-w-xs text-gray-400 font-medium leading-relaxed text-sm md:text-base">
                {t.hero.subtitle}
@@ -72,7 +72,7 @@ const Footer: React.FC<{ t: TranslationSet }> = ({ t }) => {
         
         <div className="flex flex-col lg:flex-row justify-between items-center py-8 border-t border-gray-50 text-center lg:text-left">
           <p className="text-gray-400 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 lg:mb-0 leading-relaxed">
-            &copy; {new Date().getFullYear()} Ühiosa. {t.footer.rights}.
+            &copy; {new Date().getFullYear()} ÜHISOSA. {t.footer.rights}.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-2 text-[8px] md:text-[10px] font-black text-gray-300 uppercase tracking-[0.3em]">
             <span>{t.footer.partOf}</span>

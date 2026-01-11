@@ -25,11 +25,11 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLanguage, t }) => {
           <div className="flex items-center space-x-3 group cursor-pointer z-50" onClick={() => { window.scrollTo({top: 0, behavior: 'smooth'}); setIsMenuOpen(false); }}>
             <img 
               src="https://uhisosa.ee/wp-content/uploads/2023/05/uhisosa.svg" 
-              alt="Ühiosa Logo" 
+              alt="ÜHISOSA Logo" 
               className={`h-8 w-8 md:h-10 md:w-10 transition-all duration-300 ${isScrolled ? 'scale-90' : 'scale-110'}`}
             />
             <div className="flex flex-col -space-y-1">
-              <span className="text-lg md:text-xl font-black text-primary tracking-tight">ÜHIOSA</span>
+              <span className="text-lg md:text-xl font-black text-primary tracking-tight">ÜHISOSA</span>
               <span className="text-[8px] md:text-[10px] font-bold text-gray-400 tracking-[0.2em] uppercase">Intersection</span>
             </div>
           </div>
@@ -42,7 +42,8 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLanguage, t }) => {
                 href={`#${key}`} 
                 className="text-sm font-bold text-gray-600 hover:text-primary transition-colors tracking-wide"
               >
-                {label.toUpperCase()}
+                {/* Cast label to string to allow toUpperCase() */}
+                {(label as string).toUpperCase()}
               </a>
             ))}
             
@@ -87,7 +88,8 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLanguage, t }) => {
                 onClick={() => setIsMenuOpen(false)}
                 className="text-lg font-black text-gray-900 hover:text-primary transition-colors py-2"
               >
-                {label.toUpperCase()}
+                {/* Cast label to string to allow toUpperCase() */}
+                {(label as string).toUpperCase()}
               </a>
             ))}
           </div>

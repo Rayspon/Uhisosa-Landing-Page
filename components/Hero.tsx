@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ t, lang }) => {
           
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-[1] md:leading-[0.95] mb-6 md:mb-8 tracking-tighter">
             {lang === 'et' ? (
-              <>ÜHIOSA.<br/><span className="text-primary">Sinu</span> kogukond.</>
+              <>ÜHISOSA.<br/><span className="text-primary">Sinu</span> kogukond.</>
             ) : (
               <>ТОЧКА<br/><span className="text-primary uppercase">ПЕРЕСЕЧЕНИЯ</span></>
             )}
